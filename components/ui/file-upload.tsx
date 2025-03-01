@@ -48,8 +48,9 @@ export const FileUpload = ({
     onDrop: handleFileChange,
     onDropRejected: (error) => {
       console.log(error);
-      return null;
+      return null; // eslint-disable-line @typescript-eslint/no-unused-expressions
     },
+    
   });
 
   return (
