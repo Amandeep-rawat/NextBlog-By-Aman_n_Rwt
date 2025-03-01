@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
+
 import { cn } from "@/lib/utils";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
@@ -48,7 +50,7 @@ export const FileUpload = ({
     onDrop: handleFileChange,
     onDropRejected: (error) => {
       console.log(error);
-      return null; // eslint-disable-line @typescript-eslint/no-unused-expressions
+      return null; 
     },
     
   });
