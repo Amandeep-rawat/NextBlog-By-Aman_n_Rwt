@@ -1,6 +1,7 @@
 # NextBlog
 
 NextBlog is a modern and feature-rich blogging platform built with **Next.js 15**, **TypeScript**, and **App Routing**. It allows users to **create, edit, track, and manage blog articles**, along with **authentication, search, comments, and more**.
+
 ## Live Link
 [NextBlog](https://next-blog-by-aman-n-rwt.vercel.app/)
 
