@@ -58,11 +58,11 @@ const RecentActicles = ({ articles }: RecentArticlesProps) => {
                     <button className="relative w-full inline-flex cursor-default h-14  overflow-hidden rounded-md p-[2px] focus:outline-none ">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
                         <span className="inline-flex h-full w-full  items-center justify-between rounded-md dark:bg-slate-950 bg-slate-950/40 px-4 py-1 text-sm font-medium text-white backdrop-blur-3xl">
-                            <p>
+                            <p className='max-sm:text-xs'>
                                Your Recent Articles
                             </p>
                            <Link href={'/articles'}>
-                            <p className='text-gray-400 flex gap-1 items-center cursor-pointer'>
+                            <p className='text-gray-400 max-sm:text-xs flex gap-1 items-center cursor-pointer'>
                                 View Others <ArrowRight size={15} />
                             </p>
                            </Link>
@@ -92,18 +92,18 @@ const RecentActicles = ({ articles }: RecentArticlesProps) => {
                                             articles.map((article)=>{
                                                 return (
 
-                                        <TableRow className='cursor-pointer' onClick={() => router.push(`/articles/${article.id}`)} key={article.id}>
+                                        <TableRow  key={article.id}>
                                             
                                             
-                                            <TableCell className='font-bold max-sm:hidden' >{article.title.slice(0,17)}...</TableCell>
-                                            <TableCell className='font-bold sm:hidden' >{article.title.slice(0,7)}</TableCell>
+                                            <TableCell  onClick={() => router.push(`/articles/${article.id}`)} className='font-bold cursor-pointer max-sm:hidden' >{article.title.slice(0,19)}...</TableCell>
+                                            <TableCell  onClick={() => router.push(`/articles/${article.id}`)} className='font-bold sm:hidden cursor-pointer' >{article.title.slice(0,11)}</TableCell>
                                             <TableCell className="font-medium">
-                                                <Badge className='bg-green-400 max-sm:hidden' variant="outline">Published</Badge>
-                                                <Badge className='bg-green-400 sm:hidden' variant="outline"><Check size={11}/></Badge>
+                                                <Badge  onClick={() => router.push(`/articles/${article.id}`)} className='bg-green-400 cursor-pointer max-sm:hidden' variant="outline">Published</Badge>
+                                                <Badge onClick={() => router.push(`/articles/${article.id}`)} className='bg-green-400 cursor-pointer sm:hidden' variant="outline"><Check size={11}/></Badge>
                                             </TableCell>
                                             <TableCell>{article.comments.length}</TableCell>
-                                            <TableCell className='max-sm:hidden'>{article.createdAt.toDateString()}</TableCell>
-                                            <TableCell className='sm:hidden text-[9px]'>{article.createdAt.toLocaleDateString("en-US", {
+                                            <TableCell onClick={() => router.push(`/articles/${article.id}`)} className='max-sm:hidden cursor-pointer'>{article.createdAt.toDateString()}</TableCell>
+                                            <TableCell onClick={() => router.push(`/articles/${article.id}`)} className='sm:hidden cursor-pointer text-[9px]'>{article.createdAt.toLocaleDateString("en-US", {
                                                         month: "short", // "Feb"
                                                     day: "2-digit", // "28"
                                                 year: "2-digit", // "25"

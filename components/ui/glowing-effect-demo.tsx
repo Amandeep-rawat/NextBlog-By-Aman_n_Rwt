@@ -66,7 +66,7 @@ export const GridItem = ({category,avatar,authorName ,title, description,image,c
   return (
     <li className={`min-h-[14rem] max-sm:w-[90%] max-sm:mx-auto list-none `}>
       <div className="relative h-full rounded-2.5xl border  p-2  md:rounded-3xl md:p-3">
-        <GlowingEffect
+        <GlowingEffect className="hidden md:block"
           spread={40}
           glow={true}
           disabled={false}
