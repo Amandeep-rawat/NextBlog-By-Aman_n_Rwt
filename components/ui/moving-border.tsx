@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ElementType } from "react";
 import {
   motion,
   useAnimationFrame,
@@ -22,7 +22,7 @@ export function Button({
 }: {
   borderRadius?: string;
   children: React.ReactNode;
-  as?: any;
+  as?: ElementType;
   containerClassName?: string;
   borderClassName?: string;
   duration?: number;

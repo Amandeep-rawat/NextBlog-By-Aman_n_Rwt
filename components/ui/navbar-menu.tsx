@@ -1,7 +1,7 @@
 "use client";
-import React  from "react";
+import React, { ReactNode }  from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link, { LinkProps } from "next/link";
 import Image from "next/image";
 import SearchInput from "../home/header/SearchInput";
 import { ToggleMode } from "../home/header/ToggleMode";
@@ -214,7 +214,7 @@ export const ProductItem = ({
   );
 };
 
-export const HoveredLink = ({ children, ...rest }: any) => {
+export const HoveredLink = ({ children, ...rest }: LinkProps & { children: ReactNode }) => {
   return (
     <Link
       {...rest}
