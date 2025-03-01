@@ -5,7 +5,7 @@ import { PlusCircle } from 'lucide-react';
 import DashboardCards from './dashboard-cards';
 import RecentActicles from './recent-articles';
 import prisma from '@/lib/prisma';
-import { useUser } from '@clerk/nextjs';
+// import { useUser } from '@clerk/nextjs';
 import { auth } from '@clerk/nextjs/server';
 const BLogDashboard = async() => {
   const {userId}=await auth();

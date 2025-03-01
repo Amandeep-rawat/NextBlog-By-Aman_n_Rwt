@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { FileUpload } from '@/components/ui/file-upload';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Meteors } from '@/components/ui/meteors';
+// import { Meteors } from '@/components/ui/meteors';
 import 'react-quill-new/dist/quill.snow.css';
 const ReactQuill=dynamic(() => import('react-quill-new'), {ssr: false})
 import { FormEvent, startTransition, useActionState, useState } from 'react';
@@ -15,6 +15,8 @@ import { Loader2 } from 'lucide-react';
 const CreateArticlesPage = () => {
     const [files, setFiles] = useState<File[]>([]);
     const [content,setContent]=useState<string>('')
+    console.log(files?"hello":"no");
+    
     const handleFileUpload = (files: File[]) => {
       setFiles(files);
       // console.log(files);

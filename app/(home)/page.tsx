@@ -3,7 +3,7 @@ import { Navbar } from "@/components/home/header/Navbar";
 import Hero from "@/components/home/hero/Hero";
 import TopArticles from "@/components/home/top-articles";
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import { Suspense } from "react";
 

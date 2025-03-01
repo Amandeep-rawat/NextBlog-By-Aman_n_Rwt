@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React  from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -15,7 +15,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet"
-import { SignedIn, SignedOut, SignIn, SignInButton, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut,  SignInButton, UserButton } from "@clerk/nextjs";
 import { Button } from "./button";
 
 const transition = {

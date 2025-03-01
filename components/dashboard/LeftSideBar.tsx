@@ -2,16 +2,16 @@ import React from 'react';
 import { ToggleMode } from '../home/header/ToggleMode';
 import {
     Sheet,
-    SheetClose,
+    
     SheetContent,
     SheetDescription,
-    SheetFooter,
+    
     SheetHeader,
     SheetTitle,
     SheetTrigger,
   } from "@/components/ui/sheet"
 import { Button } from '../ui/button';
-import { BarChart, FileText, Home, LayoutDashboard, MessageCircle, Plus, PlusIcon, Settings } from 'lucide-react';
+import {  FileText, Home, LayoutDashboard,  PlusIcon, Settings } from 'lucide-react';
 import Link from 'next/link';
 
 const LeftSideBar = () => {

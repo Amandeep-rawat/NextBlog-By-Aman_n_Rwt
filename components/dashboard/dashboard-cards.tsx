@@ -1,8 +1,8 @@
 "use client"
-import React, { useState } from 'react';
+import React from 'react';
 import { BackgroundGradient } from '../ui/background-gradient';
 import Image from 'next/image';
-import { Clock, File, FileText, MessageCircle } from 'lucide-react';
+import { Clock,  FileText, MessageCircle } from 'lucide-react';
 import { Prisma } from '@prisma/client';
 type RecentArticlesProp={
   articles:Prisma.ArticleGetPayload<{

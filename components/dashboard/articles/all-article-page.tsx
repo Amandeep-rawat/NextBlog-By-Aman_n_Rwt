@@ -1,9 +1,9 @@
 import { GlowingEffectDemo } from '@/components/ui/glowing-effect-demo';
-import prisma from '@/lib/prisma';
+// import prisma from '@/lib/prisma';
 import { Prisma } from '@prisma/client';
-import { title } from 'process';
+// import { title } from 'process';
 import React from 'react';
-import type { Article } from '@prisma/client';
+// import type { Article } from '@prisma/client';
 type AllArticlesPageProps={
   articles:Prisma.ArticleGetPayload<{
     include:{
@@ -17,19 +17,7 @@ type AllArticlesPageProps={
     }
   }>[]
 }
-type ALLARTICAL = {
-  articles: Prisma.ArticleGetPayload<{
-    include: {
-      author: {
-        select: {
-          name: true;
-          imageUrl: true;
-        };
-      };
-      
-    };
-  }>[];
-};
+
 export default async function AllArticlesPage({articles}:AllArticlesPageProps) {
   // console.log("searchtext value is ",searchText);
   

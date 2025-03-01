@@ -21,11 +21,11 @@ import {
 } from "@/components/ui/table"
 import { Badge } from '../ui/badge';
 import Link from 'next/link';
-import { ArrowRight, Check, Delete, DeleteIcon, Edit, Trash2 } from 'lucide-react';
-import type { Article, Prisma } from '@prisma/client';
+import { ArrowRight, Check,  Edit, Trash2 } from 'lucide-react';
+import type {  Prisma } from '@prisma/client';
 import { deleteArticle } from '@/actions/delete-article';
-import { useFormStatus } from 'react-dom';
-import { IconBucket } from '@tabler/icons-react';
+// import { useFormStatus } from 'react-dom';
+// import { IconBucket } from '@tabler/icons-react';
 import {  useRouter } from 'next/navigation';
 
 // import { useFormStatus } from 'react-dom';

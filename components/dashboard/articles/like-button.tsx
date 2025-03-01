@@ -2,7 +2,7 @@
 import { toggleLike} from '@/actions/like-dislike';
 import { Button } from '@/components/ui/button';
 import type { Like } from '@prisma/client';
-import { Bookmark, Share, Share2, ThumbsUp } from 'lucide-react';
+import { Bookmark,  Share2, ThumbsUp } from 'lucide-react';
 import React, { useOptimistic, useTransition } from 'react';
 
 const LikeButton = ({articleId,likes,isLiked}:{articleId:string;likes:Like[];isLiked:boolean}) => {

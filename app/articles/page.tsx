@@ -3,7 +3,7 @@ import AllArticlesPage from '@/components/dashboard/articles/all-article-page';
 import { ArticleSearchInput } from '@/components/dashboard/articles/article-search-input';
 import { Button } from '@/components/ui/button';
 import React, { Suspense } from 'react';
-import prisma from "@/lib/prisma";
+// import prisma from "@/lib/prisma";
 import { fetchArticleByQuery } from "@/actions/pagination-query-article-fetch";
 import Link from "next/link";
 

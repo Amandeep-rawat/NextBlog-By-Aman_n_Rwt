@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export const FollowerPointerCard = ({
   children,
   className,
-  title,
+  
 }: {
   children: React.ReactNode;
   className?: string;

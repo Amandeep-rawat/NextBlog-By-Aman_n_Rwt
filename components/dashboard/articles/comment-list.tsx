@@ -1,6 +1,6 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import React from 'react';
-import type { Comment, Prisma } from '@prisma/client';
+import type {  Prisma } from '@prisma/client';
 type CommentListProps={
 comments:Prisma.CommentGetPayload<{
     include:{

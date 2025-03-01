@@ -1,9 +1,9 @@
 "use client";
 
-import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
+// import { Box, Lock, Search, Settings, Sparkles } from "lucide-react";
 import { GlowingEffect } from "@/components/ui/glowing-effect";
 import Image from "next/image";
-import type { Article, Prisma } from "@prisma/client";
+import type {  Prisma } from "@prisma/client";
 import Link from "next/link";
 import { Avatar, AvatarFallback, AvatarImage } from "./avatar";
 
