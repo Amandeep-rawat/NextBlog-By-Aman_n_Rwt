@@ -94,8 +94,8 @@ export const GridItem = ({category,avatar,authorName ,title, description,image,c
           </div>
             
             <div className="">
-            <h3 className="pt-0.5 text-lg/[1.375rem] font-semibold font-sans -tracking-4 md:text-lg/[1.875rem] text-balance text-black dark:text-white h-12">
-  {title}
+            <h3 className="pt-0.5 text-lg/[1.375rem] font-semibold font-sans overflow-hidden -tracking-4 md:text-lg/[1.875rem] text-balance text-black dark:text-white h-16">
+  {title.slice(0,30)}...
 </h3>
 <h2 className="text-sm md:text-sm/[1.375rem] text-black dark:text-neutral-400 h-14 overflow-hidden">
   {description} ..............
