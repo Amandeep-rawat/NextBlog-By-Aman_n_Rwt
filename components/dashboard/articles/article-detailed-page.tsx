@@ -2,7 +2,7 @@ import React from 'react';
 import type {  Prisma } from '@prisma/client';
 // import { GridItem } from '@/components/ui/glowing-effect-demo';
 // import { Box } from 'lucide-react';
-import { GlowingEffect } from '@/components/ui/glowing-effect';
+// import { GlowingEffect } from '@/components/ui/glowing-effect';
 import Image from 'next/image';
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import LikeButton from './like-button';
