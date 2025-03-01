@@ -1,0 +1,62 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+ id String @unique @id @default(cuid()) 
+ clerkUserId String @unique
+ email String @unique
+ name String 
+ imageUrl String?
+ articles Article[]
+ comments Comment[]
+ likes Like[]
+
+}
+
+model Article{
+  id String @unique @id @default(cuid())
+  title String
+  content String
+  category String
+  featuredImage String
+  authorId String
+  author User @relation(fields: [authorId],references: [id] )
+  comments Comment[]
+  likes Like[]
+  createdAt DateTime @default(now())
+
+}
+model Comment{
+  id String @unique @id @default(cuid())
+  authorId String
+  author User @relation(fields: [authorId],references: [id] )
+  articleId String
+  article Article @relation(fields: [articleId],references: [id] )
+  createdAt DateTime @default(now())
+  body String
+}
+model Like{
+  id String @unique @id @default(cuid())
+  userId String
+  user User @relation(fields: [userId],references: [id] )
+  articleId String
+  article Article @relation(fields: [articleId],references: [id] )
+  createdAt DateTime @default(now())
+
+  @@unique([userId,articleId])   //1 hi baar like karega
+}
+
+
+

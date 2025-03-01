@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextBlog
 
-## Getting Started
+NextBlog is a modern and feature-rich blogging platform built with **Next.js 15**, **TypeScript**, and **App Routing**. It allows users to **create, edit, track, and manage blog articles**, along with **authentication, search, comments, and more**.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🔹 Home Page
+- A beautifully designed homepage with an **amazing theme**.
+- Shows the **latest 3 articles** fetched from **Neon DB (Prisma ORM)**.
+- **Authentication using Clerk** – Users need to sign in to access certain routes.
+- A **responsive navbar** with a **hamburger menu** for small screens.
+- **Protected Routes** – Unauthenticated users cannot access specific routes.
+- **Dark/Light Mode Toggle** for a seamless user experience.
+- **Smooth Animations** powered by **Framer Motion**.
+- **Modern UI Components** using **ShadCN UI & Aceternity UI**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔹 Dashboard
+- Displays **all blogs created by the user**.
+- Shows **article details** like title, status, comments, and creation date.
+- Users can **edit, delete, and track their own articles**.
+- Users **can only delete their own articles**.
+- A dedicated **Add Article** page for creating new content.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🔹 Article Management
+- A dedicated **Articles Page** where users can see **all published blogs**.
+- **Search Functionality** – Users can search for blogs using specific keywords.
+- **Detailed Article View** – Users can read full articles with an **amazing grid layout**.
+- **Like & Comment System** – Users can engage with content through likes and comments.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🔹 UI & Animations
+- **Aceternity UI & ShadCN UI** for modern, stylish components.
+- **Framer Motion** for smooth animations & transitions.
+- **Fully Responsive Design** – Works across all devices.
 
-## Learn More
+## 🛠️ Tech Stack
+- **Next.js 15 (App Router)** – Modern and fast framework for web applications.
+- **TypeScript** – Ensuring type safety and better developer experience.
+- **Prisma & Neon DB** – Database management and ORM for efficient data handling.
+- **Clerk Authentication** – Secure and easy user authentication.
+- **ShadCN UI & Aceternity UI** – Beautiful and customizable UI components.
+- **Framer Motion** – Smooth animations and interactive UI.
+- **Tailwind CSS** – Responsive and customizable styling.
 
-To learn more about Next.js, take a look at the following resources:
+## 📜 License
+This project is **open-source** and available under the **MIT License**.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 🎉 Enjoy Blogging with NextBlog! 🚀
