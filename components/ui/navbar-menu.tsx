@@ -86,9 +86,9 @@ export const Menu = ({
       onMouseLeave={() => setActive(null)} // resets the state
       className="relative  border-b dark:bg-[#09090B] bg-white   border-transparent dark:border-gray-700  shadow-input flex justify-between items-center px-8 max-[900px]:px-4 py-3 "
     >
-
-      <h1 className="text-2xl font-bold bg-gradient-to-br from-[#8732a5] to-[#0c6fa1] bg-clip-text text-transparent drop-shadow-md">
-        NextBlog
+      
+      <h1 className="text-2xl flex font-bold bg-gradient-to-br from-[#8732a5] to-[#0c6fa1] bg-clip-text text-transparent drop-shadow-md">
+        NextBlog <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#ca91df] to-[#0c6fa1] pt-2 mt-2 text-[11px]">By Rwt</span>
       </h1>
 
 
@@ -96,7 +96,7 @@ export const Menu = ({
         {children}
 
       </div>
-      <SearchInput className="w-56 pl-10" wrapperClassName="max-[470px]:hidden" />
+      <SearchInput className="w-56 pl-10" wrapperClassName="max-[551px]:hidden" />
       <div className="flex items-center ">
 
 
@@ -135,7 +135,9 @@ export const Menu = ({
               <SheetContent side={"left"}>
                 <SheetHeader>
                   <SheetTitle>
-                    <p className="text-2xl mb-2 w-fit font-bold bg-gradient-to-br from-[#8732a5] to-[#0c6fa1] bg-clip-text text-transparent drop-shadow-md">NextBlog</p>      </SheetTitle>
+                    <h1 className="text-2xl w-fit flex font-bold bg-gradient-to-br from-[#8732a5] to-[#0c6fa1] bg-clip-text text-transparent drop-shadow-md">
+        NextBlog <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#ca91df] to-[#0c6fa1] pt-2 mt-2 text-[11px]">By Rwt</span>
+      </h1>     </SheetTitle>
                   <SheetDescription>
 
                   </SheetDescription>

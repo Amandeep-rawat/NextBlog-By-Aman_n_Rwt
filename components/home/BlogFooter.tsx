@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Twitter, Github, Linkedin } from "lucide-react";
+import {  Github, Linkedin } from "lucide-react";
 
 const BlogFooter = () => {
   return (
@@ -43,13 +43,11 @@ const BlogFooter = () => {
         <div className="flex flex-col items-center sm:items-start space-y-2">
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Follow Us</h3>
           <div className="flex space-x-4">
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
-              <Twitter size={20} />
-            </a>
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            
+            <a href="https://github.com/Amandeep-rawat" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
               <Github size={20} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
+            <a href="https://www.linkedin.com/in/amandeep-rawat-1622a82ba/" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white">
               <Linkedin size={20} />
             </a>
           </div>
