@@ -19,7 +19,7 @@ const LikeButton = ({articleId,likes,isLiked}:{articleId:string;likes:Like[];isL
   return (
     <div className='flex gap-4 mb-12 border-t pt-8'>
       <form action={handleLikeDislike}>
-        <Button disabled={isPending} type='submit' variant={"ghost"}><ThumbsUp className='h-5 gap-2 w-5'/> {optimisticLike}
+        <Button disabled={isPending} type='submit' variant={"ghost"}><ThumbsUp className={`h-5 gap-2 w-5 ${isLiked && "fill-red-500"}`}/> {optimisticLike}
         </Button>
         <Button variant={"ghost"}>
             <Bookmark className='h-5 gap-2 w-5'/>
